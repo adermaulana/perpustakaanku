@@ -17,7 +17,7 @@
                         <form class="row g-3" method="post" action="/admin/anggota/tambah" enctype="multipart/form-data">
                             @csrf
                             <div class="col-md-6">
-                                <label for="nama" class="form-label">Nomor Anggota</label>
+                                <label for="nomor_anggota" class="form-label">Nomor Anggota</label>
                                 <input type="text" class="form-control" value="{{ $nomor_anggota }}" readonly style="background-color: #cccccc;">
                                 <input type="hidden" name="nomor_anggota" value="{{ $nomor_anggota }}">
                             </div>
@@ -27,7 +27,7 @@
                                     value="{{ old('nama') }}" autofocus>
                             </div>
                             <div class="col-md-6">
-                                <label for="nama" class="form-label">Telepon</label>
+                                <label for="telepon" class="form-label">Telepon</label>
                                 <input type="number" class="form-control" name="telepon" value="{{ old('telepon') }}">
                             </div>
                             <div class="col-md-6">

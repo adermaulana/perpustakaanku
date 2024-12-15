@@ -42,7 +42,7 @@
                                     value="{{ \Carbon\Carbon::now()->format('Y-m-d') }}">
                             </div>
                             <div class="col-md-6 mt-3">
-                                <label for="tanggal_pinjam" class="form-label">Tanggal Rencana Pengembalian</label>
+                                <label for="tanggal_rencana_pengembalian" class="form-label">Tanggal Rencana Pengembalian</label>
                                 <input type="date" class="form-control" name="tanggal_rencana_pengembalian">
                             </div>
                             <div class="col-md-12 mt-3">

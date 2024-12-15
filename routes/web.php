@@ -75,4 +75,4 @@ Route::delete('admin/peminjaman/{peminjaman}/delete', [PeminjamanController::cla
 //Pengembalian
 Route::get('admin/pengembalian', [PengembalianController::class, 'index']);
 Route::put('admin/pengembalian/{peminjaman}', [PengembalianController::class, 'kembali'])->name('pengembalian.buku');
-Route::get('admin/pengembalian/{peminjaman}/delete', [PengembalianController::class, 'hapus']);
+Route::delete('admin/pengembalian/{peminjaman}/delete', [PengembalianController::class, 'hapus']);

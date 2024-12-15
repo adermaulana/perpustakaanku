@@ -26,7 +26,6 @@
             </div>
         @endif
         <hr />
-        <a href="/admin/peminjaman/tambah" class="btn btn-primary px-4 mb-3">Tambah Data</a>
         <div class="row">
             <div class="col-lg">
                 <div class="card">
@@ -79,7 +78,7 @@
                                                         </button>
                                                     @endif
                                                     @if ($data->status == 'dikembalikan')
-                                                        <form action="/admin/peminjaman/{{ $data->id }}/delete"
+                                                        <form action="/admin/pengembalian/{{ $data->id }}/delete"
                                                             method="post" class="d-inline">
                                                             @method('delete')
                                                             @csrf
