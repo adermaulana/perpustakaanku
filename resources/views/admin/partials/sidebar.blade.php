@@ -2,7 +2,7 @@
 <div class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
         <div>
-            <img src="/assets/images/library-icon.png" class="logo-icon" alt="perpustakaan">
+            <h6>Admin</h6>
         </div>
         <div class="toggle-icon ms-auto"><i class='bx bx-arrow-back'></i>
         </div>
@@ -25,7 +25,7 @@
             <ul>
                 <li> <a href="/admin/buku"><i class='bx bx-radio-circle'></i>Daftar Buku</a>
                 </li>
-                <li> <a href="/admin/buku/create"><i class='bx bx-radio-circle'></i>Tambah Buku</a>
+                <li> <a href="/admin/buku/tambah"><i class='bx bx-radio-circle'></i>Tambah Buku</a>
                 </li>
             </ul>
         </li>
@@ -36,22 +36,9 @@
                 <div class="menu-title">Kategori Buku</div>
             </a>
             <ul>
-                <li> <a href="/admin/category"><i class='bx bx-radio-circle'></i>Daftar Kategori</a>
+                <li> <a href="/admin/kategori"><i class='bx bx-radio-circle'></i>Daftar Kategori</a>
                 </li>
-                <li> <a href="/admin/category/create"><i class='bx bx-radio-circle'></i>Tambah Kategori</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a class="has-arrow" href="javascript:;">
-                <div class="parent-icon"><i class='bx bx-file'></i>
-                </div>
-                <div class="menu-title">Rak Buku</div>
-            </a>
-            <ul>
-                <li> <a href="/admin/chapters"><i class='bx bx-radio-circle'></i>Daftar Rak</a>
-                </li>
-                <li> <a href="/admin/chapters/create"><i class='bx bx-radio-circle'></i>Tambah Rak</a>
+                <li> <a href="/admin/kategori/tambah"><i class='bx bx-radio-circle'></i>Tambah Kategori</a>
                 </li>
             </ul>
         </li>
@@ -62,7 +49,7 @@
                 <div class="menu-title">Anggota</div>
             </a>
             <ul>
-                <li> <a href="/admin/pelanggan"><i class='bx bx-radio-circle'></i>Daftar Anggota</a>
+                <li> <a href="/admin/anggota"><i class='bx bx-radio-circle'></i>Daftar Anggota</a>
                 </li>
             </ul>
         </li>
@@ -70,10 +57,12 @@
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"><i class="bx bx-time"></i>
                 </div>
-                <div class="menu-title">Peminjaman</div>
+                <div class="menu-title">Transaksi</div>
             </a>
             <ul>
-                <li> <a href="/admin/focus"><i class='bx bx-radio-circle'></i>Daftar Peminjaman</a>
+                <li> <a href="/admin/peminjaman"><i class='bx bx-radio-circle'></i>Daftar Peminjaman</a>
+                </li>
+                <li> <a href="/admin/pengembalian"><i class='bx bx-radio-circle'></i>Daftar Pengembalian</a>
                 </li>
             </ul>
         </li>
