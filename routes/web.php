@@ -8,7 +8,7 @@ use App\Http\Controllers\Admin\KategoriController;
 use App\Http\Controllers\Admin\PeminjamanController;
 use App\Http\Controllers\Admin\PengembalianController;
 
-
+use App\Models\Buku;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,8 +21,25 @@ use App\Http\Controllers\Admin\PengembalianController;
 */
 
 Route::get('/', function () {
-    return redirect('/login');
-})->name('login');
+    return view('index');
+});
+
+Route::get('/buku', function () {
+    
+    $buku = Buku::all();
+
+    return view('buku',[
+        'buku' => $buku
+    ]);
+});
+
+Route::get('/detail/{buku:judul}', function (Buku $buku){
+    
+    return view('detail',[
+        'buku' => $buku
+    ]);
+
+});
 
 Route::get('/admin', function () {
 
